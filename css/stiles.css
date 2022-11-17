@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*CSS del index*/
+body{
+    background-image: url(../img/gold\ fondo\ ok.jpg);
+    height: 100%;
+    width: 100%;
+    
+}
+.menuHome{
+    
+    font-style: italic;
+    text-shadow: 5px 5px 10px rgb(117, 115, 115);
+    font-size: 2.5rem;
+
+}
+.menuHome a {
+    text-decoration: overline;
+    color: black;
+}
+
+.hMenu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+.divHome{
+    margin-top: 8%;
+}
+.divMain{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.columnExpansive{
+    background-color: rgba(216, 191, 216, 0.171);
+    display: block;
+    height: 400px;
+    width: 250px;
+    font-style: italic;
+    color: antiquewhite;
+    text-shadow: 2px 2px 2px rgb(255, 250, 250);
+    box-shadow: 2px 2px 15px rgb(0, 0, 0);
+    padding: 15px;
+}
+.columnExpansive a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.mujerPaseando{
+    margin-top: 20px;
+}
+.hombreMontain{
+    margin-top: 35px;
+}
+.trasladoTurquia{
+    margin-top: 30px;
+}
+.navAvion{
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+}
+.divAvion{
+    background-image: url(../img/avion2.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 10%;
+    box-shadow: 5px 5px 15px black; 
+}
+.divAvion form fieldset ol li{
+    list-style: none;
+    background-color: rgba(82, 99, 109, 0.562);
+}
+.textoAvion{
+    font-size: 2.5rem;
+    background-color:  rgba(82, 99, 109, 0.562);
+    color: antiquewhite;
+    text-shadow: 12px 12px 12px rgb(0, 0, 0);
+    padding: 15%;
+    border-radius: 60px;
+    border: solid 1px black;
+    box-shadow: 5px 5px 12px black;
+}
+.bordeFormu{
+    border: solid 1px black;
+    box-shadow: 5px 5px 12px black;
+}
+.footerTurismo{
+    background-color: rgba(0, 0, 0, 0.582);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: 80% 20%;
+    grid-template-areas: 
+        "header main div"
+        "header main div"
+        "header main div"
+        "fin fin fin";
+    justify-items: center;
+    align-items: center ;
+    color: antiquewhite;
+    font-style: italic;
+    margin: 15px;
+    border: solid 1px black;
+    box-shadow: 5px 5px 12px black;
+}
+.basesCond{
+    
+    grid-area: header;
+ 
+   
+}
+.infoViajes{
+    
+    grid-area: main;
+    
+}
+.linkRedes{
+  
+    grid-area: div;
+    text-align: center;
+
+
+}
+.finPag{
+  
+    grid-area: fin;
+
+
+}
+.decorationText{
+    list-style:  none;
+    text-align: center;
+}
+.ayudaViajes{
+    margin: 10px;
+    text-align: center;
+}
+.tituloBases{
+    margin: 10px;
+    text-align: center;
+}
+.contactoTitulo{
+    margin: 25px;
+}
+.finPaginas{
+    margin: 25px;
+}
+
+/*Incorporo mq*/
+
+@media screen and (min-width: 320px) and (max-width:1200px) {
+    .divAvion{
+        display: none;
+    }
+}
+
+/*CSS de sección hotelería*/
+
+.imageFondo{
+    background-image: url(../img/hotel\ puerta.jpg);
+    height: 300px ;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.596);
+}
+.tituHotel{
+    display: inline-block;
+    font-style: italic;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 15px 8px 8px white;
+    text-align: center;
+    margin: 100px 100px 100px 15px;
+}
+.galeriaImagenes{
+    margin: 5% 15% 5% 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+    
+}
+.galeriaImagenesDos{
+    margin: 5% 15% 5% 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.galeriaImagenesHijo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tituloInstalacion{
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    text-decoration: overline;
+    padding-top: 60px ;
+    text-shadow: 5px 5px 5px white;
+}
+.tituloExperiencias{
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    text-decoration: overline;
+    padding-top: 60px ;
+    text-shadow: 5px 5px 5px white;
+}
+.sectionHotel{
+    display: grid;
+    grid-template-areas: 
+        "paises casas lugares alquiler preguntas"
+        "paises casas lugares alquiler preguntas"
+        "paises casas lugares alquiler preguntas"
+        "paises casas lugares alquiler preguntas";
+    background-color: rgba(37, 39, 17, 0.096) ;
+    border: 1px solid black;
+}
+.divHotel{
+    grid-area: paises;
+}
+.divHotelDos{
+    grid-area: casas;
+}
+.divHotelTres{
+    grid-area: lugares;
+}
+.divHotelCuatro{
+    grid-area: alquiler;
+}
+.divHotelCinco{
+    grid-area: preguntas;
+}
+.olSection{
+    list-style: none;
+    padding: 20px;
+}
+.navVolver{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 2px white;
+   
+}
+.volverSection{
+    display: flex;
+    display: inline-block;
+    
+}
+.colorPalabras{
+    text-decoration: overline;
+    color: rgb(14, 9, 4);
+    font-size: 1.5rem;
+}
+/*Incorporo Transformación*/
+
+.divTransf:hover{
+    transform: scale(1.5);
+}
+/* Incorporo mq*/
+@media screen and (min-width: 320px) and (max-width: 1200px){
+    .sectionHotel{
+        display: none;
+    }
+    .galeriaImagenes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .galeriaImagenesDos{
+        display: flex;
+        flex-wrap: wrap
+    }
+}
+/*css de sección Vuelos*/
+
+.headerColor{
+    background-color: rgba(255, 213, 162, 0.514);
+}
+.estiloVuelos{
+    color: antiquewhite;
+    font-size: 2rem;
+    font-style: italic;
+    text-shadow: 2px 2px 2px grey;
+}
+.colorMenu{
+    color: antiquewhite;
+    text-shadow: 2px 2px 2px grey;
+}
+.carrouselEditor{
+   
+    display: flex;
+    justify-content: center;
+    
+}
+.classCovid{
+    display: grid;
+    grid-template-areas: 
+    "covid fotografo"
+    "covid fotografo";
+    margin-top: 5%;
+    padding: 1% 25%;
+    grid-column: auto;
+    
+}
+.classGrid{
+    grid-area: covid;
+
+}
+.classGridDos{
+    grid-area: fotografo;
+  
+}
+/*Incorporo mq*/
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+    .classCovid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+/*CSS de sección paquetes*/
+
+.colorBoton{
+    background-color: rgb(238, 199, 99);
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px black;
+    font-size: 1.2rem;
+    color: black;
+    font-style: oblique;
+}
+.ordenCars{
+    display: grid;
+    grid-template-areas: 
+    "hotel tranvia moto"
+    "hotel tranvia moto"
+    "hotel tranvia moto";
+}
+.cardUno{
+    grid-area: hotel;
+}
+.cardDos{
+    grid-area: tranvia;
+}
+.cardTres{
+    grid-area: moto;
+}
+.navVolver{
+    margin-top: 25px;
+}
+/*Aplico mq*/
+@media  screen and (min-width:320px) and (max-width:1200px) {
+    .ordenCars{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+/*CSS de sección traslados*/
+.tituloTraslados{
+    font-size: 2rem;
+    font-style: italic;
+    color: black;
+    text-shadow: 2px 2px 10px grey;
+    text-align: center;
+    margin: 5%;
+    text-decoration: overline;
+}
+.grillaGrid{
+    display: grid;
+    grid-template-areas: 
+    "carsuno carsdos carstres"
+    "carsuno carsdos carstres"
+    "carscuatro carscinco carsseis"
+    "carscuatro carscinco carsseis";
+}
+.carsUno{
+    grid-area: carsuno;
+}
+.carsDos{
+    grid-area: carsdos;
+}
+.carsTres{
+    grid-area: carstres;
+}
+.carsCuatro{
+    grid-area: carscuatro;
+}
+.carsCinco{
+    grid-area: carscinco;
+}
+.carsSeis{
+    grid-area: carsseis;
+}
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+    .grillaGrid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+/*CSS de experiencias*/
+.tituloExperiencias{
+    font-size: 2rem;
+    font-style: italic;
+    color: black;
+    text-shadow: 2px 2px 10px grey;
+    text-align: center;
+    margin: 5%;
+    text-decoration: overline;
+}
+
+.grillaExp{
+    display: grid;
+    grid-template-areas: 
+    "rafting moto canoa fiesta"
+    "almuerzo alpinismo trekking nativos";
+}
+.classRafting{
+    grid-area: rafting ;
+}
+.classMoto{
+    grid-area: moto ;
+}
+.classCanoa{
+    grid-area: canoa ;
+}
+.classFiesta{
+    grid-area: fiesta;
+}
+.classAlmuerzo{
+    grid-area: almuerzo;
+}
+.classAlpinismo{
+    grid-area: alpinismo ;
+}
+.classTrekking{
+    grid-area: trekking;
+}
+.classNativos{
+    grid-area: nativos;
+}
+/*aplico mq*/
+@media screen and (min-width:320px) and (max-width:1200px){
+    .grillaExp{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+/*CSS de escapadas*/
+.tituloEscapadas{
+    font-size: 2rem;
+    font-style: italic;
+    color: black;
+    text-shadow: 2px 2px 10px grey;
+    text-align: center;
+    margin: 5%;
+    text-decoration: overline;
+}
+.mainEsc{
+    display: grid;
+    grid-template-areas: 
+    "toronto playa nyc"
+    "colombia turquia croacia";
+}
+.classToronto{
+    grid-area: toronto;
+}
+.classPlaya{
+    grid-area: playa;
+}
+.classNyc{
+    grid-area: nyc;
+}
+.classColombia{
+    grid-area: colombia;
+}
+.classTurquia{
+    grid-area: turquia;
+}
+.classCroacia{
+    grid-area: croacia;
+}
+@media screen and (min-width:320px) and (max-width:1200px) {
+    .mainEsc{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
